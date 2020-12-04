@@ -3,3 +3,64 @@
 * {
   box-sizing: border-box;
 }
+
+
+/* Añadiendo ritmo vertical */
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd, p,figure,
+pre,table,fieldset,hr, img {
+  margin-bottom: 1rem;
+}
+
+
+/* Añadiendo imagen de fondo, color de fuente y fuente  */
+body {
+  background-image: url(activos/background%20pattern.png);
+  font-family: 'Libre Baskerville', serif;
+  color: #444349;
+}
+
+
+/* Añadiendo tipografía */
+.title, .name {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+}
+
+.name {
+  font-size: 3.15rem;
+  color: #d2ba87;
+}
+
+.tagline1, .date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  color: white;
+}
+
+.program, .questionsandanswers {
+  color: #d2ba87;
+}
+
+.ceremony, .photos, .party, li, .tagline2, .question, .answer {
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.125rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tagline2 {
+  font-style: italic;
+}
+
+.gift p, .contacto {
+  font-size: 1.125rem;
+}
+
+footer {
+  font-family: 'Mulish', sans-serif;
+  font-size: 0.875rem;
+}
