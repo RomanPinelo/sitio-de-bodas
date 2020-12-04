@@ -32,10 +32,12 @@ body {
   color: #d2ba87;
 }
 
-.tagline1, .date {
+.text {
   font-size: 1.25rem;
   letter-spacing: .15rem;
   color: white;
+  background-color: hsla(100,0%,0%,.6);
+  padding: 0.675rem;
 }
 
 .program, .questionsandanswers {
@@ -74,3 +76,55 @@ a {
 a:hover {
   color: #eda087;
 }
+
+
+/* Encabezado de pantalla completa */
+.cover {
+  display: table;
+  background: url(activos/cover%20photo.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tagline1::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
