@@ -22,12 +22,14 @@ body {
 
 
 /* Añadiendo tipografía */
-.title, .name {
+.title {
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .name {
+  font-family: "Great Vibes", cursive;
   font-size: 3.15rem;
   color: #d2ba87;
 }
@@ -114,14 +116,26 @@ a:hover {
 }
 
 
+/* Estilizando sección de ubicaciones */
+.location {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
 
+.location img {
+  width: 7.5rem;
+}
 
-
-
-
-
-
-
+.ceremonia::after, .fotos::after, .fiesta::after {
+  display: block;
+  content: "";
+  background-color: #444349;
+  height: 0.1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+}
 
 
 
