@@ -18,6 +18,7 @@ body {
   background-image: url(activos/background%20pattern.png);
   font-family: 'Libre Baskerville', serif;
   color: #444349;
+  line-height: 1.5;
 }
 
 
@@ -64,12 +65,6 @@ body {
   font-size: 1.125rem;
 }
 
-footer {
-  font-family: 'Mulish', sans-serif;
-  font-size: 0.875rem;
-  color: white;
-}
-
 a {
   text-decoration: none;
   color: #bd806e;
@@ -83,8 +78,7 @@ a:hover {
 /* Encabezado de pantalla completa */
 .cover {
   display: table;
-  background: url(activos/cover%20photo.jpg) no-repeat center;
-  background-size: cover;
+  background: url(activos/cover%20photo.jpg) no-repeat 70% center/cover;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -161,4 +155,73 @@ a:hover {
 
 .paragraph {
   margin-bottom: 0; 
+}
+
+
+/* Estilizando la sección de preguntas */
+.questionsandanswers {
+  background-color: hsla(100,0%,0%,.6);
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.questionsandanswers h3 {
+  font-weight: 400;
+}
+
+.questionsandanswers p {
+  text-align: left;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+.travelandaccomodations::after, .foodandfestivities::after,
+.othersmallstuff::after{
+  display: block;
+  content: "";
+  background-color: #d2ba87;
+  height: 0.1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+}
+
+
+/* Estilizando sección de contacto */
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+
+/* Estilizando el pie de página */
+footer {
+  background-color: #606060;
+  display: table;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer p {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: white;
 }
