@@ -124,7 +124,7 @@ a:hover {
   text-align: center;
 }
 
-.location img {
+.location img, .gifts img {
   width: 7.5rem;
 }
 
@@ -138,7 +138,27 @@ a:hover {
 }
 
 
+/* Estilizando sección de programa */
+.program {
+  background-color: hsla(100,0%,0%,.6);
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.program h2 {
+  margin-top: 1rem;
+  text-align: center;
+}
 
 
+/* Estilizando sección de regalos */
+.gifts {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
 
-
+.paragraph {
+  margin-bottom: 0; 
+}
