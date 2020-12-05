@@ -75,6 +75,27 @@ a:hover {
 }
 
 
+@media screen and (min-width: 768px) {
+  .tagline1 {
+    text-transform: uppercase;
+  }
+  
+  .name {
+    font-size: 7rem;
+    margin-bottom: 0;
+  }
+  
+  .text {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .cover {
+    background: url(activos/cover%20photo.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
+
 /* Encabezado de pantalla completa */
 .cover {
   display: table;
@@ -131,6 +152,30 @@ a:hover {
   margin: 1.5rem auto;
 }
 
+@media screen and (min-width: 768px) {
+  .ceremonia::after, .fotos::after, .fiesta::after {
+    display: none;
+  }
+  
+  .left {
+    float: left;
+    width: 33.33%;
+  }
+  
+  .location::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .location h3, .location img {
+    margin-bottom: 1.5rem;
+  }
+  
+  .location p {
+    margin: 0;
+  }
+}
 
 /* Estilizando sección de programa */
 .program {
@@ -144,6 +189,12 @@ a:hover {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .prog {
+    width: 30vw;
+    margin: 0 auto;
+  }
+}
 
 /* Estilizando sección de regalos */
 .gifts {
@@ -185,13 +236,37 @@ a:hover {
 }
 
 .travelandaccomodations::after, .foodandfestivities::after,
-.othersmallstuff::after{
+.othersmallstuff::after {
   display: block;
   content: "";
   background-color: #d2ba87;
   height: 0.1875rem;
   width: 50vw;
   margin: 1.5rem auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .travelandaccomodations::after, .foodandfestivities::after,
+  .othersmallstuff::after {
+    display: none;
+  }
+  
+  .questionsandanswers::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  .travelandaccomodations, .foodandfestivities,
+  .othersmallstuff {
+    padding: 2.6rem;
+  }
+  
+  .questionsandanswers h3 {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
 }
 
 
@@ -224,4 +299,11 @@ footer p {
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+  footer {
+    height: 7vh;
+  }
 }
