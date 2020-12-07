@@ -13,13 +13,15 @@ pre,table,fieldset,hr, img {
 }
 
 
+
 /* Añadiendo imagen de fondo, color de fuente y fuente  */
 body {
-  background-image: url(activos/background%20pattern.png);
+  background-image: url("activos/background%20pattern.png");
   font-family: 'Libre Baskerville', serif;
   color: #444349;
   line-height: 1.5;
 }
+
 
 
 /* Añadiendo tipografía */
@@ -75,31 +77,11 @@ a:hover {
 }
 
 
-@media screen and (min-width: 768px) {
-  .tagline1 {
-    text-transform: uppercase;
-  }
-  
-  .name {
-    font-size: 7rem;
-    margin-bottom: 0;
-  }
-  
-  .text {
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .cover {
-    background: url(activos/cover%20photo.jpg) no-repeat center;
-    background-size: cover;
-  }
-}
 
 /* Encabezado de pantalla completa */
 .cover {
   display: table;
-  background: url(activos/cover%20photo.jpg) no-repeat 70% center/cover;
+  background: url("activos/cover%20photo.jpg") no-repeat 70% center/cover;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -130,6 +112,29 @@ a:hover {
   margin: 0 .5rem;
 }
 
+/* Media queries */
+@media screen and (min-width: 768px) {
+  .tagline1 {
+    text-transform: uppercase;
+  }
+  
+  .name {
+    font-size: 7rem;
+    margin-bottom: 0;
+  }
+  
+  .text {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .cover {
+    background: url("activos/cover%20photo.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+
 
 /* Estilizando sección de ubicaciones */
 .location {
@@ -152,6 +157,7 @@ a:hover {
   margin: 1.5rem auto;
 }
 
+/* Media queries */
 @media screen and (min-width: 768px) {
   .ceremonia::after, .fotos::after, .fiesta::after {
     display: none;
@@ -177,6 +183,8 @@ a:hover {
   }
 }
 
+
+
 /* Estilizando sección de programa */
 .program {
   background-color: hsla(100,0%,0%,.6);
@@ -189,12 +197,15 @@ a:hover {
   text-align: center;
 }
 
+/* Media queries */
 @media screen and (min-width: 768px) {
   .prog {
     width: 30vw;
     margin: 0 auto;
   }
 }
+
+
 
 /* Estilizando sección de regalos */
 .gifts {
@@ -207,6 +218,7 @@ a:hover {
 .paragraph {
   margin-bottom: 0; 
 }
+
 
 
 /* Estilizando la sección de preguntas */
@@ -245,7 +257,7 @@ a:hover {
   margin: 1.5rem auto;
 }
 
-
+/* Media queries */
 @media screen and (min-width: 768px) {
   .travelandaccomodations::after, .foodandfestivities::after,
   .othersmallstuff::after {
@@ -270,6 +282,7 @@ a:hover {
 }
 
 
+
 /* Estilizando sección de contacto */
 .contact {
   width: 95%;
@@ -277,6 +290,7 @@ a:hover {
   padding: 0.5rem 1rem;
   text-align: center;
 }
+
 
 
 /* Estilizando el pie de página */
@@ -301,7 +315,7 @@ footer p {
   color: white;
 }
 
-
+/* Media queries */
 @media screen and (min-width: 768px) {
   footer {
     height: 7vh;
